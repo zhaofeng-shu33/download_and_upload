@@ -8,6 +8,7 @@ if __name__ == '__main__':
         auth = oss2.Auth(access_key_id, access_key_secret)
         bucket = oss2.Bucket(auth, 'http://oss-cn-shenzhen.aliyuncs.com', 'freiwilliger')
         # open `main.pdf` and `clustering.pdf` and upload them to the oss server
-        file = open(sys.argv[1], 'rb')
+        file_name = sys.argv[1]
+        file_content = open(file_name, 'rb')
         research_base = 'tmp/'
-        bucket.put_object(research_base + file, file)
+        bucket.put_object(research_base + file_name, file_content)
