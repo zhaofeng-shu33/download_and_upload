@@ -10,5 +10,5 @@ script:
   - cd Deutsch-Lernen
   - git archive --format=zip HEAD > archive.zip
   - cp ../upload.py ./
-  - python upload.py archieve.zip
+  - python upload.py archive.zip
 
