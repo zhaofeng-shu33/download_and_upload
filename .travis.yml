@@ -1,0 +1,8 @@
+os: linux
+dist: xenial
+script:
+  - git clone https://github.com/Leidenschaft/Deutsch-Lernen
+  - cd Deutsch-Lernen
+  - git archive --format=zip HEAD > archive.zip
+  - python upload.py
+
