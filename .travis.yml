@@ -8,7 +8,7 @@ install:
 script:
   - git clone https://github.com/Leidenschaft/Deutsch-Lernen
   - cd Deutsch-Lernen
-  - git bundle create repo.bundle HEAD master ^e591d10
+  - git bundle create repo.bundle HEAD master ^c215d2e
   - cp ../upload.py ./
   - python upload.py repo.bundle
 
