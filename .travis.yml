@@ -1,9 +1,14 @@
 os: linux
 dist: xenial
+language: python
+python:
+  - "3.6"
+install:
+  - pip install oss2
 script:
   - git clone https://github.com/Leidenschaft/Deutsch-Lernen
   - cd Deutsch-Lernen
   - git archive --format=zip HEAD > archive.zip
   - cp ../upload.py ./
-  - python upload.py
+  - python upload.py archieve.zip
 
