@@ -6,9 +6,7 @@ python:
 install:
   - pip install oss2
 script:
-  - git clone https://github.com/Leidenschaft/Deutsch-Lernen
-  - cd Deutsch-Lernen
-  - git bundle create repo.bundle HEAD master ^c215d2e
-  - cp ../upload.py ./
-  - python upload.py repo.bundle
+  - git clone --depth=1 https://github.com/Leidenschaft/Deutsch-Lernen
+  - tar -cf Deutsch-Lernen.tar Deutsch-Lernen
+  - python upload.py Deutsch-Lernen.tar
 
