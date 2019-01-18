@@ -7,6 +7,6 @@ install:
   - pip install oss2
 script:
   - git clone https://github.com/zhaofeng-shu33/DeutschLernen_server
-  - tar -cf Deutsch-Lernens.tar Deutsch-Lernens
+  - tar -cf Deutsch-Lernens.tar DeutschLernen_server
   - python upload.py Deutsch-Lernens.tar
 
