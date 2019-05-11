@@ -3,9 +3,11 @@ dist: xenial
 language: python
 python:
   - "3.6"
+cache:
+  - pip  
 install:
   - pip install oss2
 script:
-  - wget https://www.python.org/ftp/python/3.7.3/amd64/core_pdb.msi
-  - python upload.py core_pdb.msi
+  - wget https://www.python.org/ftp/python/3.7.3/amd64/exe_pdb.msi
+  - python upload.py exe_pdb.msi
 
