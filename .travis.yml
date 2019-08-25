@@ -8,10 +8,10 @@ cache:
 install:
   - pip install oss2
 script:
-  #- wget https://www.python.org/ftp/python/3.7.3/amd64/exe_pdb.msi
-  - git clone --depth=1 https://gitlab.gnome.org/GNOME/gedit.git
-  - cd gedit
-  - git archive --format=zip HEAD -o gedit.zip
-  - cd ..  
-  - python upload.py gedit/gedit.zip
+  - wget https://openvpn.net/downloads/openvpn-as-latest-CentOS7.x86_64.rpm
+  #- git clone --depth=1 https://gitlab.gnome.org/GNOME/gedit.git
+  #- cd gedit
+  #- git archive --format=zip HEAD -o gedit.zip
+  #- cd ..  
+  - python upload.py openvpn-as-latest-CentOS7.x86_64.rpm
 
