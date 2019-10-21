@@ -1,17 +1,12 @@
-os: osx
-matrix:
-  include:
-  - osx_image: xcode9.4
-    addons:
-      homebrew:
-        update: true
-        taps: zhaofeng-shu33/liblemonformula
-        packages:
-          - glib-static  
-  - osx_image: xcode10.3 
-    addons:
-      homebrew:
-        taps: zhaofeng-shu33/liblemonformula
-        packages:
-          - glib-static
-
+script:
+  - mkdir -p download
+  - wget https://updates.tdesktop.com/tsetup/tsetup.1.8.15.exe -P download
+deploy:
+  provider: s3
+  access_key_id: AKIAJOHYI4KJCE6Q7MIQ
+  secret_access_key: $ACCESS_KEY
+  region: us-east-1
+  bucket: ieee-dataport
+  upload-dir: open/15769
+  local_dir: download
+  skip_cleanup: true
