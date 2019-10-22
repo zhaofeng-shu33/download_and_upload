@@ -1,6 +1,6 @@
 script:
   - mkdir -p download
-  - wget https://updates.tdesktop.com/tsetup/tsetup.1.8.15.exe -P download
+  - wget "https://www.apkmirror.com/wp-content/uploads/2019/10/5da689f4e6b03/com.android.vending_17.1.16-all_0_PR_274697545-81711600_minAPI16(armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi)_apkmirror.com.apk?verify=1571760485-yhGzSeWb6ak8k0ziTuyvHzYuRjqNpmzgAiZJkUdQCd8%3D" -P download -O googlestore.apk
 deploy:
   provider: s3
   access_key_id: AKIAJOHYI4KJCE6Q7MIQ
