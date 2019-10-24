@@ -1,7 +1,7 @@
 script:
   - mkdir -p download
-  - wget "https://www.apkmirror.com/wp-content/uploads/2019/10/5d9b0c2ce2ab1/com.google.android.apps.maps_10.26.3-1026301040_minAPI21(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk?verify=1571761690-CjYjzB8b312LpfRZ5FqgVWD8UPeB63LLSnTNFNvr%2Fxs%3D" -P download -O googlemaps.apk
-  - mv googlemaps.apk download/
+  - wget "https://www.apkmirror.com/wp-content/uploads/2019/10/5da6f8a384b10/com.whatsapp_2.19.291-453019_minAPI15(armeabi-v7a)(nodpi)_apkmirror.com.apk?verify=1571933136-rLW3Na4G0M%2BuXPBpJF%2BfcqXGcoxtIoyzixwCtdb%2B9Js%3D" -P download -O whatsapp.apk
+  - mv whatsapp.apk download/
 deploy:
   provider: s3
   access_key_id: AKIAJOHYI4KJCE6Q7MIQ
