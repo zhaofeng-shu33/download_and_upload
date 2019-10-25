@@ -1,6 +1,6 @@
 script:
   - mkdir -p download
-  - wget "https://github.com/BioDepot/TaskPerform_AWSLambda/archive/master.zip" -P download -O whatsapp.apk
+  - wget "https://github.com/BioDepot/TaskPerform_AWSLambda/archive/master.zip" -P download -O master.zip
   - mv master.zip download/
 deploy:
   provider: s3
