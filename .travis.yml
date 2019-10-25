@@ -11,3 +11,5 @@ deploy:
   upload-dir: open
   local_dir: download
   skip_cleanup: true
+  on:
+    branch: dev
