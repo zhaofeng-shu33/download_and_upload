@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: curl "https://adw7bwv8tr.pdcdn5.top/dl2.php?id=164902403&h=393f4569a369854be89f724c415efe8a&u=cache&ext=pdf&n=Le%20nouveau%20sans%20fronti%C3%A8res%201%20le%20livre%20du%20professeur" -o book.pdf
-    - name: Archive paper pdf
+    - name: Archive book pdf
       uses: actions/upload-artifact@v1
       with:
         name: paper
