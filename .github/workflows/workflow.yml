@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
-      run: curl "https://ia803009.us.archive.org/17/items/DragonBall1986/13.%20Goku%27s%20Great%20Transformation.mp4" -o a.mp4
+      run: curl -L "https://archive.org/download/DragonBall1986/14.%20Goku%27s%20Rival%20Appears%21%21.mp4" -o a.mp4
     - name: Archive book pdf
       uses: actions/upload-artifact@v1
       with:
